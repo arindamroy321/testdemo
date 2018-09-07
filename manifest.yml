@@ -1,0 +1,9 @@
+applications:
+- name: tracker-movie
+  path: ./target/moviefun.war
+  routes:
+  - route: moviefun.api.run.pivotal.io
+  memory: 1G
+  instances: 1
+  env:
+    GRANT_TYPE: client_credentials
